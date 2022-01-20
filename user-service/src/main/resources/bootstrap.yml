@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: user-service
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      config:
+        file-extension: yaml
+        namespace: 60cf3839-8482-46f9-a4f1-cab67f76650e
+      discovery:
+        namespace: 60cf3839-8482-46f9-a4f1-cab67f76650e
+  datasource:
+    username: root
+    password: HYSBEST1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///spring_cloud_database?useSSL=false&useUnicode=true&characterEncoding=utf8
+server:
+  port: 8082
+feign:
+  httpclient:
+    enabled: true
+    max-connections: 200
+    max-connections-per-route: 50

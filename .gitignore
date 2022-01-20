@@ -1,0 +1,3 @@
+# Project exclude paths
+/feign_api/target/
+/gateway/target/
