@@ -13,7 +13,7 @@
         <module>feign_api</module>
         <module>gateway</module>
         <!--        <module>feign-api</module>-->
-<!--        <module>gateway</module>-->
+        <!--        <module>gateway</module>-->
     </modules>
 
     <packaging>pom</packaging>
@@ -31,8 +31,9 @@
         <java.version>1.8</java.version>
         <spring-cloud.version>Hoxton.SR10</spring-cloud.version>
         <mysql.version>8.0.27</mysql.version>
-<!--        <mybatis.version>2.1.1</mybatis.version>-->
+        <!--        <mybatis.version>2.1.1</mybatis.version>-->
         <mybatisplus.version>3.4.2</mybatisplus.version>
+        <docker.image.prefix>spring-cloud-demo</docker.image.prefix>
     </properties>
 
     <dependencyManagement>
@@ -66,11 +67,11 @@
                 <version>${mybatisplus.version}</version>
             </dependency>
             <!--            &lt;!&ndash;mybatis&ndash;&gt;-->
-<!--            <dependency>-->
-<!--                <groupId>org.mybatis.spring.boot</groupId>-->
-<!--                <artifactId>mybatis-spring-boot-starter</artifactId>-->
-<!--                <version>${mybatis.version}</version>-->
-<!--            </dependency>-->
+            <!--            <dependency>-->
+            <!--                <groupId>org.mybatis.spring.boot</groupId>-->
+            <!--                <artifactId>mybatis-spring-boot-starter</artifactId>-->
+            <!--                <version>${mybatis.version}</version>-->
+            <!--            </dependency>-->
         </dependencies>
     </dependencyManagement>
     <dependencies>

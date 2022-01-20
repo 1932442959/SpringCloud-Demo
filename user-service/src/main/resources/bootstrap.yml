@@ -5,19 +5,23 @@ spring:
     active: dev
   cloud:
     nacos:
-      server-addr: localhost:8848
+      server-addr: 192.168.1.101:8848
       config:
         file-extension: yaml
         namespace: 60cf3839-8482-46f9-a4f1-cab67f76650e
       discovery:
         namespace: 60cf3839-8482-46f9-a4f1-cab67f76650e
+        ip: 192.168.1.101
   datasource:
     username: root
     password: HYSBEST1234
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql:///spring_cloud_database?useSSL=false&useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://192.168.1.101:3306/spring_cloud_database?useSSL=false&useUnicode=true&characterEncoding=utf8&useJDBCCompliantTimezoneShift=true&serverTimezone=UTC&allowPublicKeyRetrieval=true
 server:
   port: 8082
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
 feign:
   httpclient:
     enabled: true
