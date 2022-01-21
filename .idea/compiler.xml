@@ -10,6 +10,8 @@
         <module name="user-service" />
         <module name="order-service" />
         <module name="gateway" />
+        <module name="rabbitmq-consumer" />
+        <module name="rabbitmq-publisher" />
         <module name="feign_api" />
       </profile>
     </annotationProcessing>
@@ -19,6 +21,8 @@
       <module name="feign_api" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="order-service" options="-parameters" />
+      <module name="rabbitmq-consumer" options="-parameters" />
+      <module name="rabbitmq-publisher" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
   </component>

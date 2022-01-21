@@ -1,0 +1,11 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: rabbitmq-publisher
+  rabbitmq:
+    host: 192.168.1.101 # ip address
+    port: 5672
+    username: jasfair
+    password: HYSBEST1234
+    virtual-host: /
