@@ -1,0 +1,22 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: elasticsearch
+  datasource:
+    username: root
+    password: HYSBEST1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.1.101:3306/spring_cloud_database?useSSL=false&useUnicode=true&characterEncoding=utf8&useJDBCCompliantTimezoneShift=true&serverTimezone=UTC&allowPublicKeyRetrieval=true
+
+logging:
+  level:
+    com.jasfair: debug
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true

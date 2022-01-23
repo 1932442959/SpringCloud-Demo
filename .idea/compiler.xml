@@ -13,11 +13,13 @@
         <module name="rabbitmq-consumer" />
         <module name="rabbitmq-publisher" />
         <module name="feign_api" />
+        <module name="elasticsearch" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="elasticsearch" options="-parameters" />
       <module name="feign_api" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="order-service" options="-parameters" />
